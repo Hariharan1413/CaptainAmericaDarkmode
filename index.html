@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" >
+    <title>Captain America</title>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <image src="../Assets/logo.png" alt="logomark" class="logo">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>Blog</a></li>
+                <li><a>About</a></li>
+                <li><a>Service</a></li>
+                <li><a>Hire Me</a></li>
+            </ul>
+            <img src='../Assets/moon.png' alt="sunlogo" id="icon">
+        </nav>
+         <div class="info">
+             <h1>I'm <span>Captain America</span> , Never give up .</h1>
+             <p>Captain Anerica is not a word , its name of people courage, so i will never give up for any evil desasters.
+                 I save my nation till my soul is removed from my body.
+
+             </p>
+             <a>Download Now</a>
+         </div>
+         <div class="imagebox">
+             <img src="../Assets/CaptainSuit.png" alt="realhero" class="back">
+             <img src="../Assets/shield.png" alt="shield" class="main">
+         </div>
+
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function() {
+            document.body.classList.toggle("darkmode");
+            if(document.body.classList.contains("darkmode")){
+                icon.src="../Assets/sun.png";
+            }
+            else
+            {
+                icon.src="../Assets/moon.png";
+            }
+        }
+       
+    </script>
+</body>
+</html>
