@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --no1:#edf2fc;
+    --no2:#212121;
+}
+.darkmode {
+    --no1:#000106;
+    --no2:#fff;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background:var(--no1);
+    position: relative;
+    font-family: sans-serif;
+}
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+nav {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+nav ul {
+    flex: 1;
+    position: absolute;
+    right:130px;
+}
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+nav ul li{
+    list-style-type:none;
+    display: inline-block;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+nav ul li a {
+    color: #606163;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #ff4321;
+}
+.info {
+    margin-left: 55%;
+    margin-top: 15%;
+}
+.info h1 {
+    font-size: 30px;
+    color: var(--no2);
+    margin-bottom: 20px;
+}
+span {
+    color: #ff4321;
+}
+.info p {
+    line-height: 22px;
+    color: #606163;
+}
+.info a {
+    text-decoration: none;
+    background: var(--no2);
+    color: var(--no1);
+    padding: 12px 14px ;
+    border-radius:5px ;
+    position: absolute;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.imagebox {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    top:150px;
+    left: 80px;
+}
+.imagebox img {
+    position: absolute;
+    height: 100%;
+    transition: 1s;
+    
+}
+
+.imagebox .back{
+    z-index: 1;
+    left: 18%;
+    top: -10px;
+}
+
+ .imagebox:hover .main {
+    transform:scale3d(1.3,1.3,1.3);
+}
